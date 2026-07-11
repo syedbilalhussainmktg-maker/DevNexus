@@ -1,16 +1,18 @@
-    export const metadata = {
-      title: 'DevNexus',
-      description: 'AI Chat App',
-    }
+    import type { Metadata } from 'next'
 
-    export default function RootLayout({
-      children,
-    }: {
-      children: React.ReactNode
-    }) {
-      return (
-        <html lang="en">
-          <body>{children}</body>
-        </html>
-      )
-    }
+export const metadata: Metadata = {
+  title: 'DevNexus',
+  description: 'AI Chat App',
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  )
+}
