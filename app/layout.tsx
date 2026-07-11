@@ -1,3 +1,3 @@
-       export default function Home() {
-      return <h1>DevNexus is Live 🚀</h1>
-    }
+      export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return <html lang="en"><body>{children}</body></html>
+}
